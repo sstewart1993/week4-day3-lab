@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block content %}
+
+{% for book in books %}
+<p>{{book.title}} - {{book.author}}</p>
+<br>
+{% endfor %}
+
+{% endblock %}
