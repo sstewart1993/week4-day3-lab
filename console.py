@@ -6,8 +6,8 @@ from models.books import Book
 import repositories.author_repository as author_repository
 import repositories.book_repository as book_repository
 
-book_repository.delete_all()
-author_repository.delete_all()
+# book_repository.delete_all()
+# author_repository.delete_all()
 
 
 author1 = Author("George", "Martin")
@@ -23,3 +23,5 @@ book3 = Book("Storm of Swords", author1)
 book_repository.save(book3)
 
 author_repository.select_all()
+
+# pdb.set_trace()

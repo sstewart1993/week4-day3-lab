@@ -3,8 +3,16 @@
 {% block content %}
 
 {% for book in books %}
-<p>{{book.title}} - {{book.author}}</p>
-<br>
+<p1>{{book.title}}  {{book.author}}</p1>
+
+
+{% endfor %}
+
+
+{% for author in authors %}
+
+<p2>{{author.first_name}}  {{author.last_name}}</p2>
+
 {% endfor %}
 
 {% endblock %}
